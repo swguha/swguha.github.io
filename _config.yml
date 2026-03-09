@@ -1,3 +1,4 @@
+# Theme Settings
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
 
@@ -5,7 +6,7 @@ minimal_mistakes_skin: "air"
 locale: "en-US"
 title: "Swarnali Guha"
 title_separator: "|"
-subtitle: "Senior Full Stack Architect | Azure Certified (AZ-204)"
+subtitle: "Senior Full Stack Architect | .NET & React Specialist"
 name: "Swarnali Guha"
 description: "Senior Full Stack Engineer with 11.5+ years of experience in .NET Core, React, and Azure Cloud Architecture."
 url: "https://swguha.github.io"
@@ -16,8 +17,8 @@ repository: "swguha/swguha.github.io"
 author:
   name: "Swarnali Guha"
   avatar: "/assets/images/profile.jpg"
-  bio: "11.5+ years experience. **Microsoft Certified Azure Developer (AZ-204)**. Specialist in .NET Core, React, and building enterprise systems for global clients like IBM."
-  location: "Bengaluru, India"
+  bio: "11.5+ years of expertise. **Microsoft Certified Azure Developer (AZ-204)**. Specialist in building high-performance enterprise systems for global clients like IBM and Bell Canada."
+  location: "Kolkata, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -29,7 +30,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:swguha@gmail.com"
 
-# Reading Files
+# Technical Settings
 include:
   - .htaccess
   - _pages
@@ -45,12 +46,8 @@ exclude:
   - /test
   - /_data
   - /_posts
-  - /_includes
-  - /_layouts
-  - /_sass
   - README.md
 
-# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -58,7 +55,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Layout Defaults
 defaults:
   - scope:
       path: ""
