@@ -25,8 +25,7 @@ author:
   name             : "Swarnali Guha"
   avatar           : "/assets/images/profile.jpg" # Add her professional photo to this path
   bio              : "11.5+ years of expertise building **mission-critical** apps. **Microsoft Certified Azure Developer Associate** specialized in .NET Core & React."
-  location         : "Kolkata, India (Available Globally)"
-  email            : "swguha@gmail.com"
+  location         : "Bengaluru, India (Available Globally)"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
