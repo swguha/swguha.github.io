@@ -1,24 +1,23 @@
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
+
+# Site Settings
 locale: "en-US"
 title: "Swarnali Guha"
 title_separator: "|"
-subtitle: "Senior Full Stack Architect | Azure Certified"
+subtitle: "Senior Full Stack Architect | Azure Certified (AZ-204)"
 name: "Swarnali Guha"
 description: "Senior Full Stack Engineer with 11.5+ years of experience in .NET Core, React, and Azure Cloud Architecture."
 url: "https://swguha.github.io"
 baseurl: ""
 repository: "swguha/swguha.github.io"
-words_per_minute: 200
-enable_copy_code_button: true
-search: true
-search_full_content: true
-search_provider: "lunr"
+
+# Site Author
 author:
   name: "Swarnali Guha"
   avatar: "/assets/images/profile.jpg"
-  bio: "11.5+ years experience. **Microsoft Certified Azure Developer (AZ-204)**. Specialist in building high-performance enterprise systems for global clients like IBM."
-  location: "Kolkata, India"
+  bio: "11.5+ years experience. **Microsoft Certified Azure Developer (AZ-204)**. Specialist in .NET Core, React, and building enterprise systems for global clients like IBM."
+  location: "Bengaluru, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -29,15 +28,11 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:swguha@gmail.com"
-footer:
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "http://linkedin.com/in/swarnali-guha-profile"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/swguha"
-  since: "2024"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
 exclude:
   - vendor
   - .bundle
@@ -49,16 +44,21 @@ exclude:
   - /docs
   - /test
   - /_data
+  - /_posts
   - /_includes
   - /_layouts
   - /_sass
   - README.md
+
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+# Layout Defaults
 defaults:
   - scope:
       path: ""
@@ -66,4 +66,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
