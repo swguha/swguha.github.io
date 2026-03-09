@@ -1,8 +1,5 @@
-# Theme Settings
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
-
-# Site Settings
 locale: "en-US"
 title: "Swarnali Guha"
 title_separator: "|"
@@ -14,13 +11,9 @@ baseurl: ""
 repository: "swguha/swguha.github.io"
 words_per_minute: 200
 enable_copy_code_button: true
-
-# Search
 search: true
 search_full_content: true
-search_provider: lunr
-
-# Site Author
+search_provider: "lunr"
 author:
   name: "Swarnali Guha"
   avatar: "/assets/images/profile.jpg"
@@ -36,11 +29,15 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:swguha@gmail.com"
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "http://linkedin.com/in/swarnali-guha-profile"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/swguha"
+  since: "2024"
 exclude:
   - vendor
   - .bundle
@@ -52,19 +49,16 @@ exclude:
   - /docs
   - /test
   - /_data
+  - /_includes
+  - /_layouts
+  - /_sass
   - README.md
-
-# Conversion & Plugins
-markdown: kramdown
-highlighter: rouge
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
-# Defaults
 defaults:
   - scope:
       path: ""
