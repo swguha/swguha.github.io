@@ -4,11 +4,11 @@ minimal_mistakes_skin    : "air" # A clean, professional look for senior enginee
 
 # --- Site Settings ---
 locale                   : "en-US"
-title                    : "Swarnali Guha"
+[cite_start]title                    : "Swarnali Guha" [cite: 1]
 title_separator          : "|"
-subtitle                 : "Senior Full Stack Architect & Tech Lead"
-name                     : "Swarnali Guha"
-description              : "Lead Engineer with 11.5+ years of experience in .NET Core, ReactJS, and Azure. Specialized in architecting scalable enterprise solutions."
+[cite_start]subtitle                 : "Senior Full Stack Architect | Azure Cloud | CI/CD & DevOps" [cite: 6, 15]
+[cite_start]name                     : "Swarnali Guha" [cite: 1]
+[cite_start]description              : "Lead Engineer with 11.5+ years of experience[cite: 5]. Specialized in architecting scalable enterprise solutions using .NET Core, ReactJS, PostgreSQL, and modern DevOps pipelines[cite: 8, 9, 15, 16]."
 url                      : "https://swguha.github.io"
 baseurl                  : "" 
 repository               : "swguha/swguha.github.io"
@@ -22,33 +22,33 @@ search_provider          : lunr
 
 # --- Site Author ---
 author:
-  name             : "Swarnali Guha"
-  avatar           : "/assets/images/profile.jpg" # Add her professional photo to this path
-  bio              : "11.5+ years of expertise building **mission-critical** apps. **Microsoft Certified Azure Developer Associate** specialized in .NET Core & React."
-  location         : "Bengaluru, India (Available Globally)"
+  [cite_start]name             : "Swarnali Guha" [cite: 1]
+  avatar           : "/assets/images/profile.jpg" 
+  [cite_start]bio              : "11.5+ years building mission-critical apps for global enterprises like IBM[cite: 5, 21]. **Microsoft Certified Azure Developer** specialized in .NET Core, React, and CI/CD automation[cite: 8, 9, 15, 93]."
+  location         : "Bengaluru, India (Available for Global Remote Roles)" 
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "http://linkedin.com/in/swarnali-guha-profile"
+      [cite_start]url: "http://linkedin.com/in/swarnali-guha-profile" [cite: 3]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/swguha"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:swguha@gmail.com"
+      [cite_start]url: "mailto:swguha@gmail.com" [cite: 3]
 
 # --- Footer ---
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "http://linkedin.com/in/swarnali-guha-profile"
+      [cite_start]url: "http://linkedin.com/in/swarnali-guha-profile" [cite: 3]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/swguha"
   since: "2024"
 
-# Reading Files
+# --- Reading Files (Excludes Default Theme Junk) ---
 include:
   - .htaccess
   - _pages
@@ -76,8 +76,9 @@ exclude:
   - package-lock.json
   - Rakefile
   - tmp
-  - /docs # <--- THIS IS THE CRITICAL LINE
-  - /test # <--- AND THIS ONE
+  - /docs 
+  - /test 
+  - /_data # Blocks the default theme's "Quick Guide" navigation
   - README.md
 
 # --- Conversion & Plugins ---
@@ -97,7 +98,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true # This ensures her bio/skills are always visible on the left
+      author_profile: true 
       share: true
   - scope:
       path: ""
