@@ -1,87 +1,60 @@
-# --- Theme Settings ---
-remote_theme            : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # A clean, professional look for senior engineers
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
 
-# --- Site Settings ---
-locale                   : "en-US"
-[cite_start]title                    : "Swarnali Guha" [cite: 1]
-title_separator          : "|"
-[cite_start]subtitle                 : "Senior Full Stack Architect | Azure Cloud | CI/CD & DevOps" [cite: 6, 15]
-[cite_start]name                     : "Swarnali Guha" [cite: 1]
-[cite_start]description              : "Lead Engineer with 11.5+ years of experience[cite: 5]. Specialized in architecting scalable enterprise solutions using .NET Core, ReactJS, PostgreSQL, and modern DevOps pipelines[cite: 8, 9, 15, 16]."
-url                      : "https://swguha.github.io"
-baseurl                  : "" 
-repository               : "swguha/swguha.github.io"
-words_per_minute         : 200
-enable_copy_code_button  : true
+# Site Settings
+locale: "en-US"
+title: "Swarnali Guha"
+title_separator: "|"
+subtitle: "Senior Full Stack Architect | Azure Certified"
+name: "Swarnali Guha"
+description: "Senior Full Stack Engineer with 11.5+ years of experience in .NET Core, React, and Azure Cloud Architecture."
+url: "https://swguha.github.io"
+baseurl: ""
+repository: "swguha/swguha.github.io"
+words_per_minute: 200
+enable_copy_code_button: true
 
-# --- Search ---
-search                   : true
-search_full_content      : true
-search_provider          : lunr
+# Search
+search: true
+search_full_content: true
+search_provider: lunr
 
-# --- Site Author ---
+# Site Author
 author:
-  [cite_start]name             : "Swarnali Guha" [cite: 1]
-  avatar           : "/assets/images/profile.jpg" 
-  [cite_start]bio              : "11.5+ years building mission-critical apps for global enterprises like IBM[cite: 5, 21]. **Microsoft Certified Azure Developer** specialized in .NET Core, React, and CI/CD automation[cite: 8, 9, 15, 93]."
-  location         : "Bengaluru, India (Available for Global Remote Roles)" 
+  name: "Swarnali Guha"
+  avatar: "/assets/images/profile.jpg"
+  bio: "11.5+ years experience. **Microsoft Certified Azure Developer (AZ-204)**. Specialist in building high-performance enterprise systems for global clients like IBM."
+  location: "Kolkata, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      [cite_start]url: "http://linkedin.com/in/swarnali-guha-profile" [cite: 3]
+      url: "http://linkedin.com/in/swarnali-guha-profile"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/swguha"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      [cite_start]url: "mailto:swguha@gmail.com" [cite: 3]
+      url: "mailto:swguha@gmail.com"
 
-# --- Footer ---
-footer:
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      [cite_start]url: "http://linkedin.com/in/swarnali-guha-profile" [cite: 3]
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/swguha"
-  since: "2024"
-
-# --- Reading Files (Excludes Default Theme Junk) ---
+# Reading Files
 include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
   - vendor
-  - .asset-cache
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
   - node_modules
   - package.json
   - package-lock.json
-  - Rakefile
-  - tmp
-  - /docs 
-  - /test 
-  - /_data # Blocks the default theme's "Quick Guide" navigation
+  - /docs
+  - /test
+  - /_data
   - README.md
 
-# --- Conversion & Plugins ---
+# Conversion & Plugins
 markdown: kramdown
 highlighter: rouge
 plugins:
@@ -91,21 +64,12 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# --- Defaults for Pages ---
+# Defaults
 defaults:
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-      author_profile: true 
-      share: true
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
       author_profile: true
-      read_time: true
       share: true
-      related: true
